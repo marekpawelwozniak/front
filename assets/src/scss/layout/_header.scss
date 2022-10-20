@@ -1,0 +1,58 @@
+
+.site-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 2rem 0;
+  border-bottom: 0.1rem solid #F1F1F1;
+}
+.main-navigation{
+  display: flex;
+}
+.logo{
+  &__item{
+    width: 102px;
+    height: 11px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+.user{
+  &__item{
+    width: 1.8rem;
+    height: 2.3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.nav-item{
+  margin: 0 2rem;
+}
+
+.dropdown-toggle::after{
+  display: none;
+}
+#menu-krove-menu>.nav-item {
+  height: 2rem;
+  a {
+    font-size: $standard-font;
+    color: $black-color;
+    line-height: 1.9rem;
+    text-align: left;
+    font-weight: 900;
+  }
+}
+#menu-krove-menu>.nav-item a {
+  padding: 0;
+  &:hover {
+    border-bottom: 2px solid #000;
+    padding-bottom: 3px;
+  }
+}

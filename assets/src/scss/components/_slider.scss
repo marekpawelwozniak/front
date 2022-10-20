@@ -1,0 +1,63 @@
+.hero-slider .items{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 15rem;
+  padding-bottom: 20rem;
+  &__header{
+    font-size: 6.4rem;
+    font-weight: $header-font-weight;
+  }
+  &__description{
+    width: 40%;
+    padding: 5rem 0;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
+}
+.slide-arrow{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50% 50%;
+  margin: auto;
+  background-color: $arrow-white;
+  transition: all 1s ease;
+  &:hover{
+    transition: all 1s ease;
+    background-color: $arrow-pre-background;
+  }
+  .bi{
+    top: 8rem;
+    width: 2rem;
+    font-size: 3rem;
+    height: 2rem;
+    z-index: 3;
+    color: $white;
+    font-weight: 900;
+    position: absolute;
+  }
+}
+.prev-arrow{
+  left: -21rem;
+  &:hover{
+    transform: translate(4rem, 0);
+  }
+}
+.bi-chevron-left{
+  left: 15rem;
+}
+
+.next-arrow{
+  right: -21rem;
+  &:hover{
+    transform: translate(-4rem, 0);
+  }
+}
+.bi-chevron-right{
+  right: 15rem;
+}
